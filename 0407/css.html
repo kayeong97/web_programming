@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1번 - 글자 강조 */
+      .box1 p.highlight {
+        color: red;
+      }
+      /* 2번 - 입력창 스타일 */
+      .box2 input[type="password"] {
+        background-color: #f0f0f0;
+      }
+      /* 3번 - 버튼 hover */
+      .box3 button:hover {
+        background-color: green;
+      }
+      /* 4번 - 짝수 아이템 색상 */
+      .box4 li:nth-child(even) {
+        color: blue;
+      }
+      /* 5번 - 앞쪽 가상 요소*/
+      .box5 h2::before {
+        content: "★";
+        color: gold;
+      }
+      /* 6번 - 마지막 가상 요소 */
+      .box6 p::after {
+        content: "!";
+        color: pink;
+      }
+      /* 7번 - 첫번째 글자 강조 */
+      .box7 p::first-letter {
+        font-size: 2em;
+        color: greenyellow;
+      }
+      /* 8번 - 동위선택자 + */
+      .box8 h1 + p {
+        color: blue;
+      }
+      /* 9번 - 동위 선택자 ~ */
+      .box9 h1 ~ p {
+        color: blue;
+        font-style: italic;
+      }
+      /* 10번 - 속성 선택자 */
+      .box10 a[href$=".pdf"] {
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1번 -->
+    <div class="box1">
+      <p>일반 문단</p>
+      <p class="highlight">강조 문단</p>
+    </div>
+    <!-- 2번 -->
+    <div class="box2">
+      <input type="text" placeholder="아이디 입력" />
+      <input type="password" placeholder="비밀번호 입력" />
+    </div>
+    <!-- 3번 -->
+    <div class="box3">
+      <button>제출</button>
+    </div>
+    <!-- 4번 -->
+    <div class="box4">
+      <ul>
+        <li>아이템 1</li>
+        <li>아이템 2</li>
+        <li>아이템 3</li>
+        <li>아이템 4</li>
+      </ul>
+    </div>
+    <!-- 5번 -->
+    <div class="box5">
+      <h2>공지사항</h2>
+      <h2>이벤트</h2>
+    </div>
+    <!-- 6번 -->
+    <div class="box6">
+      <p>회원가입 완료</p>
+      <p>결제 완료</p>
+    </div>
+    <!-- 7번 -->
+    <div class="box7">
+      <p>CSS 선택자</p>
+      <p>CSS 선택자는 매우 다양합니다.</p>
+    </div>
+    <!-- 8번 -->
+    <div class="box8">
+      <h1>제목</h1>
+      <p>첫 번째 단락</p>
+      <p>두 번째 단락</p>
+    </div>
+    <!-- 9번 -->
+    <div class="box9">
+      <h1>제목</h1>
+      <p>첫 번째 단락</p>
+      <p>두 번째 단락</p>
+    </div>
+    <!-- 10번 -->
+    <div class="box10">
+      <ul>
+        <li><a href="report.pdf">보고서</a></li>
+        <li><a href="image.png">이미지</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
