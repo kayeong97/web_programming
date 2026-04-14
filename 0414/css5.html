@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cards {
+        /* 반응형 Grid 구현 */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      .cards div {
+        background: #fde68a;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #fcd34d;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>반응형 카드 레이아웃</h2>
+    <div class="cards">
+      <div>Card 1</div>
+      <div>Card 2</div>
+      <div>Card 3</div>
+      <div>Card 4</div>
+      <div>Card 5</div>
+    </div>
+  </body>
+</html>
