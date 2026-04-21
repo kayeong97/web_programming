@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      .ball:hover {
+        transform: translateX(100px);
+        transition: all 0.5s ease;
+        animation-name: bounce;
+        animation-duration: 1s;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>

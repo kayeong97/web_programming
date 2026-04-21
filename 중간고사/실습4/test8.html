@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexbox div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .flexbox div:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .flexbox div:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+      .flexbox div:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

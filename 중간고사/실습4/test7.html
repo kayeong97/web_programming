@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .left {
+        float: left;
+        width: 100px;
+        background-color: lightblue;
+      }
+      .right {
+        float: right;
+        width: 100px;
+        background-color: lightcoral;
+      }
+      .text {
+        clear: both;
+        background-color: gray;
+      }
+      /*
+        clear는 float 요소의 영향을 받지 않도록 하는 속성
+        - left: 왼쪽 float 요소의 영향을 받지 않음
+        - right: 오른쪽 float 요소의 영향을 받지 않음
+        - both: 양쪽 float 요소의 영향을 받지 않음
+      */
+    </style>
+  </head>
+  <body>
+    <div class="left">왼쪽 박스</div>
+    <div class="right">오른쪽 박스</div>
+    <div class="text">이 문장은 두 박스 아래쪽에 오게 하세요.</div>
+  </body>
+</html>

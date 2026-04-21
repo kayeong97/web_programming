@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .container div {
+        width: 80px;
+        height: 80px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .container div:nth-child(1) {
+        background-color: blue;
+      }
+      .container div:nth-child(2) {
+        background-color: green;
+      }
+      .container div:nth-child(3) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexbox 기본 정렬 실습</h2>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

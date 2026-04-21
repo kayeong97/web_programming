@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .cards div {
+        background-color: yellow;
+        padding: 20px;
+        text-align: center;
+        border: 1px dashed gray;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>반응형 카드 레이아웃</h2>
+    <div class="cards">
+      <div>Card 1</div>
+      <div>Card 2</div>
+      <div>Card 3</div>
+      <div>Card 4</div>
+      <div>Card 5</div>
+    </div>
+  </body>
+</html>
